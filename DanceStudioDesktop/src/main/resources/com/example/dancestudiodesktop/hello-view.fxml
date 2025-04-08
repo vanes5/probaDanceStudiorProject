@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox prefHeight="480.0" prefWidth="612.0" spacing="20.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17.0.12" fx:controller="com.example.dancestudiodesktop.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <children>
+      <HBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" nodeOrientation="LEFT_TO_RIGHT">
+         <children>
+            <Button mnemonicParsing="false" onAction="#onDeleteButtonClick" text="Törlés" />
+         </children>
+      </HBox>
+      <HBox>
+         <children>
+            <TableView fx:id="TableView">
+              <columns>
+                <TableColumn fx:id="name" minWidth="50.0" prefWidth="150.0" text="Név" />
+                <TableColumn fx:id="type" prefWidth="150.0" text="Típus" />
+                  <TableColumn fx:id="length" prefWidth="100.0" text="Hossz" />
+                  <TableColumn fx:id="instructor" prefWidth="175.0" text="Oktató" />
+              </columns>
+            </TableView>
+         </children>
+      </HBox>
+   </children>
+</VBox>

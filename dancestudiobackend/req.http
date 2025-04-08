@@ -1,0 +1,23 @@
+POST http://localhost:3000/api/courses/100/apply
+Content-Type: application/json
+
+{}
+
+###
+POST http://localhost:3000/api/courses
+Content-Type: application/json
+
+{
+  "name": "dance",
+  "length": 90,
+  "type": "solo",
+  "instructor": "John Smith"
+}
+
+###
+### GET request to example server
+GET localhost:3000/api/courses
+
+###
+
+
