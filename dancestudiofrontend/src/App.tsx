@@ -43,7 +43,9 @@ function App() {
         <div className={"row justify-content-center "}>
           {
             courses.map((item: Course) =>
-                <CourseCard key={item.id} course={item}/>
+                <div key={item.id} className={"border-2 col-lg-4 col-md-6 col-sm-12 col-12"}>
+                  <CourseCard course={item}/>
+                </div>
             )
           }
         </div>

@@ -22,7 +22,7 @@ export default function CourseCard({course}: CourseCardProps){
     }
 
     return <>
-        <Card className={"border-2 col-lg-4 col-md-6 col-sm-12 col-12"} style={{ width: '18rem'}}>
+        <Card  style={{ width: '100%'}}>
             <Card.Body>
                 <Card.Title>{course.name}</Card.Title>
                 <Card.Text>Hossz: {course.length} perc</Card.Text>
